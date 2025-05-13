@@ -1,0 +1,9 @@
+services:
+  ulogger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/ulogger_container
+    working_dir: /ulogger_container
+    command: python test.py

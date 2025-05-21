@@ -11,8 +11,8 @@
 - [x] Add LICENSE (MIT)
 
 # Version 0.1.1 readme update
-- [ ] Add example Docker Compose usage
-- [ ] Add installation from docker and withouth docker
+- [x] Add example Docker Compose usage to readme
+- [x] Add installation from docker and withouth docker to readme
 
 # Version 0.2.0 - Logging Enhancements, some Error Handling and Command-Line Integratio
 - [ ] Set Up Log File Naming - Configure the logging system to use dynamic log file naming based on the current date or version (e.g., ulogger_2023-05-01.log).

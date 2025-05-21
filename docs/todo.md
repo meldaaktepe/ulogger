@@ -69,7 +69,8 @@
 - [ ] Add developer guide and CLI usage examples
 - [ ] Add usage diagrams (text or image-based)
 - [ ] Add docstrings to all core components
-- [ ] Add example Docker Compose usage
+- [X] Add example Docker Compose usage to readme
+- [x] Add installation from docker and withouth docker to readme
 
 ## 📈 Release & Distribution
 ### 📦 Packaging

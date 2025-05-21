@@ -1,9 +1,32 @@
 services:
-  ulogger:
+  builder:
     build:
       context: .
       dockerfile: Dockerfile
+    image: ulogger:dev
+    # This service doesn't run — just builds the image
+  ulogger: # Fix: Not Working
+    image: ulogger:dev
+    depends_on:
+      - builder
     volumes:
       - .:/ulogger_container
     working_dir: /ulogger_container
-    command: python test.py
+    command: python examples/example.py
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+    env_file:
+      - .env  # Point to the .env file
+
+  ulogger_version_check:
+    image: ulogger:dev
+    depends_on:
+      - builder
+    volumes:
+      - .:/ulogger_container
+    working_dir: /ulogger_container
+    command: python ulogger/__init__.py
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+    env_file:
+      - .env  # Point to the .env file

@@ -2,11 +2,12 @@
 FROM python:3.12
 
 # Set the working directory inside the container
-WORKDIR /ulogger
+WORKDIR /ulogger_container
 
-# Copy requirements.txt and install Python libraries
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install bumpversion
+
+# Install pip tools
+RUN pip install --upgrade pip build twine
 
 # Copy the rest of your app code
 COPY . .

@@ -1,5 +1,5 @@
 """logging testing."""
-from core.reporter import Reporter
+from ulogger.core.reporter import Reporter
 
 my_report = Reporter()
 my_report.print.header("This is a header message for the console. Not for the file.") # Logs to console only

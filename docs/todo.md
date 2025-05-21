@@ -1,7 +1,5 @@
 # 📋 TODO: ULogger Development Checklist
 
-> Current Version: `0.0.1`
-
 ## 🔧 Core Features
 - [x] Create base `Logger` and `Reporter` classes
 - [x] Add colored console output (info, warning, error, success, etc.)

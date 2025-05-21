@@ -7,11 +7,8 @@
 - [X] Support file logging
 - [X] Support console logging
 - [x] Define and support custom log levels (HEADER, SUCCESS, FAIL)
-- [ ] Create `pyproject.toml`
-- [ ] Create a `.bumpversion.cfg` config
-- [ ] Update `CHANGELOG.md` automatically
+- [X] Create `pyproject.toml`
 - [x] Add LICENSE (MIT)
-- [ ] Generate git tags with each version bump
 
 # Version 0.1.1 readme update
 - [ ] Add example Docker Compose usage

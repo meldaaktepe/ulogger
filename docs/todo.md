@@ -11,17 +11,17 @@
 - [ ] Supoort unique file name (Configure dynamic log file name (e.g., timestamp or ENV-based))
 - [x] Define and support custom log levels (HEADER, SUCCESS, FAIL)
 - [ ] Implement log level filtering
-- [ ] Add timestamp to all log entries
+- [<] Add timestamp to all log entries
 - [ ] Add log metadata (source, context, etc.)
 - [ ] Add log rotation
 - [ ] Add log compression
 
 ## 🔄 Versioning & Git Integration
 - [ ] Use `bumpversion` for automatic semantic versioning
-    - [x] Create a `.bump2version.cfg` config
+    - [ ] Create a `.bump2version.cfg` config
     - [ ] Generate git tags with each version bump
 - [ ] Create and push Git tags after each version bump
-- [x] Update `CHANGELOG.md` automatically
+- [ ] Update `CHANGELOG.md` automatically
 - [ ] Validate that bumped version matches tag and changelog
 
 ## 📦 Configuration
@@ -51,6 +51,9 @@
 
 ## 🧰 Developer Experience
 - [x] Dockerize the project for development
+    - [ ] Add example service to compose
+    - [ ] Add cli example service to compose
+    - [ ] Add cli version service tı compose
 - [ ] Add syntax highlighting and color customization
 - [ ] Optional: Add logger themes or style presets
 
@@ -59,6 +62,7 @@
 - [ ] Add CLI flags: `--level`, `--message`, `--format`, `--output`
 - [ ] Allow file output through CLI
 - [ ] Display version with `--version`
+- [ ] Add a example flag that automaticly runs the example
 
 ## 📄 Documentation
 - [ ] Write `README.md` with installation and usage
@@ -74,6 +78,7 @@
 - [x] Create `pyproject.toml`
 - [ ] Build the project with `build`
 - [ ] Add version badge and license badge to README
+- [ ] write post build code to deleate build and -egg files
 ### 📦 Distribution
 - [ ] Package project for PyPI (when stable)
 - [ ] Include proper license in distribution

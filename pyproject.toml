@@ -1,0 +1,14 @@
+[project]
+name = "ulogger"
+dynamic = ["version"]
+description = "A simple, colorful, and file-backed logging utility for Python."
+authors = [
+    { name = "Hatice Melda Aktepe" }
+]
+readme = "readme.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ulogger"]
